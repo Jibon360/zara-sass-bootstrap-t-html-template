@@ -1,0 +1,36 @@
+.work {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+ 
+
+    &.work::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: $black_color;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: .7;
+    }
+
+    .work-content {
+        max-width: 620px;
+        margin: 0px auto;
+
+        h3{
+            font-size: 28px;
+            font-weight: 650;
+        }
+        p{
+            line-height: 27px;
+        }
+        a{
+            color: #fff !important;
+        }
+    }
+}

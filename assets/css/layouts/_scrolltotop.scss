@@ -1,0 +1,10 @@
+.sccrolltotop {
+  z-index: 9999;
+  .material-scrolltop {
+    background: $pink_color;
+    I {
+      font-size: 20px;
+      color: $white_color;
+    }
+  }
+}

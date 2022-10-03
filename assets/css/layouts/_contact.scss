@@ -1,0 +1,70 @@
+.contact {
+  background: $secbg_Color;
+
+  .contact-link {
+    background: $white_color;
+    padding: 20px 20px;
+    margin: 10px 10px;
+
+    i {
+      font-size: 30px;
+      color: $pink_color;
+    }
+
+    p {
+      margin: 15px 0px;
+    }
+  }
+
+  .contact-form {
+    background: $white_color;
+    margin-top: 45px;
+    padding: 30px 30px;
+    border-top: 2px solid $pink_color;
+    border-bottom: 2px solid $pink_color;
+    position: relative;
+    .sing-form-box {
+      margin: 10px 10px;
+
+      .form-control {
+        border-radius: 0px;
+        padding: 10px 10px;
+        border: 2px solid $black_color;
+
+        &:focus {
+          outline: $pink_color;
+          box-shadow: none;
+          border: 2px solid $pink_color;
+        }
+      }
+    }
+    &.contact-form::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      height: 0;
+      width: 2px;
+      background-color: $pink_color;
+      transition: $transtion;
+    }
+    &:hover.contact-form::after {
+      height: 100%;
+    }
+
+    &.contact-form::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      height: 0;
+      width: 2px;
+      background-color: $pink_color;
+      transition: $transtion;
+    }
+    &:hover.contact-form::before{
+      height: 100%;
+
+    }
+  }
+}

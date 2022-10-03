@@ -1,0 +1,27 @@
+.aabout {
+    .about-right {
+        h2 {
+            font-size: 35px !important;
+            font-weight: 700;
+            color: $black_color;
+            
+            span{
+                color: $pink_color;
+            }
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            margin: 20px 0px;
+            letter-spacing: 0px;
+            line-height: 26px;
+            
+        }
+        .btn-brand{
+            &:hover{
+                color: $white_color !important;
+            }
+        }
+
+    }
+}

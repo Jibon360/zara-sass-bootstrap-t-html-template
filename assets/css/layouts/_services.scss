@@ -1,0 +1,66 @@
+.services {
+    background-color: $secbg_Color;
+
+    .single-services {
+        padding: 20px 20px;
+        transition: $transtion;
+        position: relative;
+        transition: $transtion;
+        z-index: 1;
+        margin: 10px 10px;
+       
+        &.single-services::after {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            background: pink_color;
+            height: 0;
+            width: 100%;
+            transition: $transtion;
+            z-index: -1;
+            background: $pink_color;
+        }
+
+        &:hover.single-services::after {
+            // box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+            height: 100%;
+            transition: $transtion;
+            color: #fff;
+
+        }
+
+        i {
+            font-size: 45px;
+            ;   transition: $transtion;
+        }
+
+        h4 {
+            margin: 20px 0px;
+            font-weight: 700;
+            text-transform: capitalize;
+            font-size: 25px;
+            transition: $transtion;
+        }
+
+        p {
+            @include para;
+            transition: $transtion;
+        }
+        &:hover{
+            i{
+                color: $white_color;
+            }
+            h4{
+                color: $white_color;
+            }
+            p{
+                color: $white_color;
+            }
+        }
+    }
+}
+
+// .shadow {
+// 	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+// }
